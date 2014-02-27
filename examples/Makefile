@@ -6,7 +6,7 @@ CFLAGS=-std=c99 $(FLAGS)
 CXXFLAGS=-std=c++11 $(FLAGS)
 
 
-EXAMPLES=ex1
+EXAMPLES=ex1 ex2
 
 %: %.c
 	$(CC) $(CFLAGS) $< -o $@
