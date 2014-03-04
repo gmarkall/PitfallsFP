@@ -3,6 +3,7 @@
  */
 
 #include <stdio.h>
+#include <math.h>
 #include "fputil.h"
 
 int main(void)
@@ -27,4 +28,5 @@ int main(void)
   printf("NaN  < 1.0 is %d\n", get_nan()  < 1.0);
   printf("NaN  > 1.0 is %d\n", get_nan()  > 1.0);
   printf("NaN == 1.0 is %d\n", get_nan() == 1.0);
+  printf("isnan(NaN) is %d\n", isnan(get_nan()));
 }
