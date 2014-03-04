@@ -37,3 +37,9 @@ double get_neg_inf()
   bitdouble neg_inf_bd = { .bits = 0xFFF0000000000000 };
   return neg_inf_bd.dbl;
 }
+
+double get_nan()
+{
+  bitdouble nan_bd = { .bits =  0x7FF1010101010101 };
+  return nan_bd.dbl;
+}
